@@ -8,9 +8,35 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-header{
-    background-color: #333;
+header {
+    width: 100%;                 /* Ocupa todo el ancho de pantalla */
+    height: 600px;               /* Altura del encabezado */
+    background: #bc4e9c;         /* Color de fondo de respaldo */
+    background: -webkit-linear-gradient(/* Degradado para navegadores WebKit */
+        to right,
+        hsla(340, 95%, 50%, 0.459),
+        hsla(317, 45%, 52%, 0.664)
+    ), url(../img/portada.jpg);  /* Gradiente + imagen para navegadores WebKit */
+    background: linear-gradient(
+        to right,
+        hsla(340, 95%, 50%, 0.459),
+        hsla(317, 45%, 52%, 0.664)
+    ), url(../img/portada.jpg);  /* Gradiente moderno + imagen */
+    background-size: cover;      /* La imagen llena el espacio sin deformarse */
+    background-attachment: fixed;/* Efecto parallax: fondo fijo */
+    position: relative;          /* Permite colocar elementos absolutamente dentro */
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px, 0 0;
+}
+
+nav a{
     color: white;
-    padding: 15 px 0;
-    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
 }
