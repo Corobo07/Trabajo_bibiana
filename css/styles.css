@@ -41,7 +41,7 @@ nav a{
     transition: color 0.3s;
 }
 
-header .texto-header{
+header .textos-header{
     display: flex; /* Usamos Flexbox para centrar el texto */
     height: 430px; /* Altura del contenedor de texto */
     width: 100%; /* Ancho completo */
@@ -51,14 +51,48 @@ header .texto-header{
     text-align: center; /* Centra el texto */
 }
 
-.texto-header h1{
+.textos-header h1{
     color: white;
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-.texto-header h2{
+.textos-header h2{
     color: white;
     font-size: 24px;
     font-weight: normal;
 }
+
+.wave{
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 0; /* Pegado al fondo del header */
+    width: 100%; /* Ancho completo */
+}
+
+/*Estilos sobre nosotros*/
+main .sobre-nosotros{
+    padding: 80px 0; /* Espaciado arriba y abajo */
+    background: #a3a1a1; /* Color de fondo */
+    text-align: center; /* Centra el texto */
+}
+
+.contenedor-sobre-nosotros{
+    display: flex; /* Usamos Flexbox */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-evenly; /* Espacio uniforme entre elementos */
+}
+
+.imagen-sobre-nosotros{
+    width: 48%; /* Ancho de la imagen */
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 40%; /* Ancho del contenedor de texto */
+}
+
+.contenido-textos h3{
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
